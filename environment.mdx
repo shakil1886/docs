@@ -1,71 +1,47 @@
 ---
-title: Envrionment
-description: "Welcome to <b> Nota AI </b>, is a powerful tool designed to help developers and QA testers efficiently test their web applications. It enables users to identify bugs, automate test workflows, and generate detailed test cases with ease. With Nota AI, you can create custom testing environments, leverage AI-powered workflow generation, and execute automated tests—all in one streamlined platform. Whether you prefer manual test creation or AI-assisted automation, Nota AI simplifies the testing process and enhances software quality. 🚀"
+title: Envrionment Page
+description: "The <b>Environments Page</b> in Nota AI allows you to create and manage testing environments where workflows are executed. Each environment serves as a <b>dedicated testing space</b>, ensuring your workflows run in the correct context."
 ---
 
+## Creating a New Environment
+
+Click on <b>Environment</b> (this will open a modal).
+
 <img
-  className="block w-full object-cover "
-  src="/images/hero-light.avif"
-  alt="Hero Light"
+  src="/images/environment-create.png"
+  className="w-full rounded-xl shadow-xl"
 />
-{/* <img
-  className="hidden dark:block"
-  src="/images/hero-dark.png"
-  alt="Hero Dark"
-/> */}
+<b>Environment Name</b> – Give your environment a meaningful name. <br />
+<b>Application URL</b> - Provide the URL of the web application you want to
+test. and Click "Create Environment" to save it.
 
-## Sign Up
+## Updating an Existing Environment
 
-Visit Nota AI’s website and click on the "Sign Up" button.
+Select an environment from the list.
 
-<CardGroup cols={2}>
-  <Card
-    title="Edit Your Docs"
-    icon="pen-to-square"
-    href="https://mintlify.com/docs/quickstart"
-  >
-    Get your docs set up locally for easy development
-  </Card>
-  <Card
-    title="Preview Changes"
-    icon="image"
-    href="https://mintlify.com/docs/development"
-  >
-    Preview your changes before you push to make sure they're perfect
-  </Card>
-</CardGroup>
+<img
+  src="/images/environment-settings.png"
+  className="w-full rounded-xl shadow-xl"
+/>
 
-## Make it yours
+Modify details such as the name, URL, or default settings. Click
 
-Update your docs to your brand and add valuable content for the best user conversion.
+<b>Save Changes </b> to update the changes.
 
-<CardGroup cols={2}>
-  <Card
-    title="Customize Style"
-    icon="palette"
-    href="https://mintlify.com/docs/settings/global"
-  >
-    Customize your docs to your company's colors and brands
-  </Card>
-  <Card
-    title="Reference APIs"
-    icon="code"
-    href="https://mintlify.com/docs/api-playground/openapi"
-  >
-    Automatically generate endpoints from an OpenAPI spec
-  </Card>
-  <Card
-    title="Add Components"
-    icon="screwdriver-wrench"
-    href="https://mintlify.com/docs/content/components/accordions"
-  >
-    Build interactive features and designs to guide your users
-  </Card>
-  <Card
-    title="Get Inspiration"
-    icon="stars"
-    href="https://mintlify.com/customers"
-  >
-    Check out our showcase of our favorite documentation
-  </Card>
-</CardGroup>
+## How to Add Placeholder Values
+
+Click on an existing environment or create a new one.
+
+<img
+  src="/images/environment-config.png"
+  className="w-full rounded-xl shadow-xl"
+/>
+
+### Set Key-Value Pairs
+
+Enter a Key (e.g., Email, Password).
+Enter a Value that will be dynamically used in workflows.
+Click "Add Another" if you need more key-value Pairs
+Click "Save" to apply changes.
+
+Once set, these placeholder values will automatically be used in workflows whenever referenced, streamlining the testing process. 🚀

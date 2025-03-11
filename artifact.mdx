@@ -1,71 +1,35 @@
 ---
 title: Artifact
-description: "Welcome to <b> Nota AI </b>, is a powerful tool designed to help developers and QA testers efficiently test their web applications. It enables users to identify bugs, automate test workflows, and generate detailed test cases with ease. With Nota AI, you can create custom testing environments, leverage AI-powered workflow generation, and execute automated tests—all in one streamlined platform. Whether you prefer manual test creation or AI-assisted automation, Nota AI simplifies the testing process and enhances software quality. 🚀"
+description: "When a <b>workflow is executed</b> in Nota AI, it generates artifacts that provide detailed insights into the test execution. These artifacts include the test case code, a step-by-step task breakdown, and visualized test results to help you analyze and debug efficiently."
 ---
 
-<img
-  className="block w-full object-cover "
-  src="/images/hero-light.avif"
-  alt="Hero Light"
-/>
-{/* <img
-  className="hidden dark:block"
-  src="/images/hero-dark.png"
-  alt="Hero Dark"
-/> */}
+## Code
 
-## Sign Up
+Every executed workflow generates a corresponding test case code. This code represents the automated steps executed during testing.
 
-Visit Nota AI’s website and click on the "Sign Up" button.
+<img src="/images/artifact-code.png" className="w-full rounded-xl shadow-xl" />
 
-<CardGroup cols={2}>
-  <Card
-    title="Edit Your Docs"
-    icon="pen-to-square"
-    href="https://mintlify.com/docs/quickstart"
-  >
-    Get your docs set up locally for easy development
-  </Card>
-  <Card
-    title="Preview Changes"
-    icon="image"
-    href="https://mintlify.com/docs/development"
-  >
-    Preview your changes before you push to make sure they're perfect
-  </Card>
-</CardGroup>
+You can <b>copy</b>, <b>modify</b>, or <b>reuse</b> the code for further automation.
 
-## Make it yours
+## Task
 
-Update your docs to your brand and add valuable content for the best user conversion.
+This tab provides a <b>step-by-step</b> breakdown of the workflow execution.
 
-<CardGroup cols={2}>
-  <Card
-    title="Customize Style"
-    icon="palette"
-    href="https://mintlify.com/docs/settings/global"
-  >
-    Customize your docs to your company's colors and brands
-  </Card>
-  <Card
-    title="Reference APIs"
-    icon="code"
-    href="https://mintlify.com/docs/api-playground/openapi"
-  >
-    Automatically generate endpoints from an OpenAPI spec
-  </Card>
-  <Card
-    title="Add Components"
-    icon="screwdriver-wrench"
-    href="https://mintlify.com/docs/content/components/accordions"
-  >
-    Build interactive features and designs to guide your users
-  </Card>
-  <Card
-    title="Get Inspiration"
-    icon="stars"
-    href="https://mintlify.com/customers"
-  >
-    Check out our showcase of our favorite documentation
-  </Card>
-</CardGroup>
+<img src="/images/artifact-task.png" className="w-full rounded-xl shadow-xl" />
+Helps in debugging issues and understanding how the test was performed.
+
+## Video
+
+A <b>recorded</b> video of the test execution is available for in-depth analysis.
+
+<img src="/images/artifact-video.png" className="w-full rounded-xl shadow-xl" />
+Useful for visualizing how the test ran and identifying unexpected behavior.
+
+## GIF
+
+A <b>compressed GIF version</b> of the video is generated for quick review.
+
+<img src="/images/artifact-gif.png" className="w-full rounded-xl shadow-xl" />
+Ideal for sharing <b>test execution summaries</b> with team members.
+
+With these artifacts, Nota AI ensures a transparent and detailed testing process, making it easier for developers and QA testers to analyze and refine their workflows. 🚀
