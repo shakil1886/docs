@@ -1,0 +1,107 @@
+---
+title: "Api keys"
+description: "The <b>API Keys</b> page in <b>Nota AI</b> allows users to generate, view, and manage API keys for securely interacting with the platform’s API. These keys are essential for authenticating API requests and executing workflows programmatically."
+---
+
+import { Table } from "mintlify/components";
+
+## Features of the API Keys Page
+
+### Viewing API Keys
+
+<ul>
+  <li>The API Keys page displays all previously generated API keys.</li>
+  <li>
+    Users can see key metadata such as:
+    <ul>
+      <li>
+        <b> Name:</b> A user-defined label for better identification.
+      </li>
+      <li>
+        <b>Created Date:</b> The timestamp when the key was generated.
+      </li>
+      <li>
+        <b>Created By:</b> Who created the Api Key
+      </li>
+      <li>
+        <b>Action:</b> Revoke any api key if needed
+      </li>
+    </ul>
+  </li>
+  <li>
+    For security reasons, the full API key is only visible at the time of
+    creation.
+  </li>
+</ul>
+
+<img
+  src="/images/apikey-page.png"
+  alt="api dashboard"
+  className="w-full rounded-xl"
+/>
+
+### Generating a New API Key
+
+To generate a new API key:
+
+<ol>
+  <li>Navigate to the API Keys page in the Nota AI dashboard.</li>
+  <li>
+    Click on the <b>"Add New Key"</b> button at the top right side.
+  </li>
+</ol>
+
+<img
+  src="/images/NewApiKey.png"
+  alt="api creating modal"
+  className="w-full rounded-xl"
+/>
+
+Enter a name for the API key
+Click "Create API key".
+The new API key will be displayed only once. Copy and store it securely.
+
+## Using API Keys for Authentication
+
+Once you have generated an API key, you can use it to authenticate requests to Nota AI’s API.
+
+### Authentication Header Format:
+
+```json
+{
+  "Authorization": "Bearer YOUR_API_KEY",
+  "Content-Type": "application/json"
+}
+```
+
+### Request Parameters
+
+| Parameter          | Type     | Description                                                                                            |
+| ------------------ | -------- | ------------------------------------------------------------------------------------------------------ |
+| `data`             | `array`  | List of workflow descriptions specifying the tests to be executed.                                     |
+| `environment_name` | `string` | The environment in which the workflow will be executed (e.g., `development`, `staging`, `production`). |
+| `suite_name`       | `string` | The name of the test suite for organizing and managing tasks.                                          |
+
+### Request Body Format:
+
+```json
+{
+  "data": [
+    "Check button functionality across screen sizes",
+    "Ensure accessibility for images and contrast",
+    "Test button response under rapid clicks"
+  ],
+  "environment_name": "development nota ai",
+  "suite_name": "api suite name"
+}
+```
+
+### Response Example
+
+```json
+{
+  "status": "success",
+  "workflow_id": "123456",
+  "message": "Workflow executed successfully"
+}
+```

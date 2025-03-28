@@ -24,6 +24,15 @@
             ]
           }
         ]
+      },
+      {
+        "tab": "API",
+        "groups": [
+          {
+            "group": "Api Reference",
+            "pages": ["/api-reference/introduction", "/api-reference/Api-key"]
+          }
+        ]
       }
     ],
     "global": {
